@@ -27,4 +27,8 @@ public class User extends Model<User>{
 	 */
 	private static final long serialVersionUID = 1L;
 
+	/**
+	 * 姓名
+	 */
+	private String name;
 }
