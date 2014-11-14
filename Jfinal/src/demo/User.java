@@ -30,5 +30,5 @@ public class User extends Model<User>{
 	/**
 	 * 姓名
 	 */
-	private String name;
+	private String name1;
 }
