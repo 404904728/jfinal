@@ -1,0 +1,10 @@
+hibernate.dialect=org.hibernate.dialect.OracleDialect
+driverClassName=oracle.jdbc.driver.OracleDriver
+url=jdbc:oracle:thin:@192.168.1.211:1521:orcl
+username=jxtpt
+password=gg
+con.maxPoolSize = 50
+con.minPoolSize = 4
+con.initialPoolSize = 4
+con.acquireIncrement = 4
+con.maxIdleTime = 60
