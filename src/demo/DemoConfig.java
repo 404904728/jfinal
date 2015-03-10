@@ -1,4 +1,17 @@
 package demo;
+
+import com.jfinal.config.Constants;
+import com.jfinal.config.Handlers;
+import com.jfinal.config.Interceptors;
+import com.jfinal.config.JFinalConfig;
+import com.jfinal.config.Plugins;
+import com.jfinal.config.Routes;
+import com.jfinal.core.JFinal;
+import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
+import com.jfinal.plugin.activerecord.CaseInsensitiveContainerFactory;
+import com.jfinal.plugin.activerecord.dialect.OracleDialect;
+import com.jfinal.plugin.c3p0.C3p0Plugin;
+
 /**
  * 
  * Title: DemoConfig.java
@@ -17,17 +30,6 @@ package demo;
 
  * @version V1.0
  */
-import com.jfinal.config.Constants;
-import com.jfinal.config.Handlers;
-import com.jfinal.config.Interceptors;
-import com.jfinal.config.JFinalConfig;
-import com.jfinal.config.Plugins;
-import com.jfinal.config.Routes;
-import com.jfinal.core.JFinal;
-import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
-import com.jfinal.plugin.activerecord.CaseInsensitiveContainerFactory;
-import com.jfinal.plugin.activerecord.dialect.OracleDialect;
-import com.jfinal.plugin.c3p0.C3p0Plugin;
 
 public class DemoConfig extends JFinalConfig {
 	public void configConstant(Constants me) {
@@ -57,6 +59,6 @@ public class DemoConfig extends JFinalConfig {
 	}
 	
 	public static void main(String[] args) {
-		JFinal.start("jinal/WebRoot", 8080, "/", 5);
+		JFinal.start("web", 8080, "/", 5);
 	}
 }

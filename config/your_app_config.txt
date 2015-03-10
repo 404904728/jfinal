@@ -1,0 +1,10 @@
+jdbcUrl = jdbc:mysql://127.0.0.1/test?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+user = root
+password = gg
+devMode = true
+
+con.maxPoolSize = 50
+con.minPoolSize = 4
+con.initialPoolSize = 4
+con.acquireIncrement = 4
+con.maxIdleTime = 60
