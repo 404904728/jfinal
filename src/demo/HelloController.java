@@ -4,7 +4,6 @@ import java.util.List;
 
 import com.jfinal.aop.Before;
 import com.jfinal.core.Controller;
-import com.jfinal.plugin.activerecord.Db;
 
 /**
  * 
